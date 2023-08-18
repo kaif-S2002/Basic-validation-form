@@ -12,24 +12,30 @@
   />
 
   <body>
-    <div class="wrapper">
+    <div class="wrapper-login">
       <div class="login-form">
-        <h2>Login</h2>
+        <h2 id="heading">Login</h2>
         <form action="">
           <div class="login-input">
             <input class="input-area" type="text" required />
-            <label for="usrname">Enter Email</label>
+            <label for="usrname">Email</label>
             <span class="material-symbols-outlined"> person </span>
           </div>
 
           <div class="login-input">
             <input class="input-area" type="password" required />
-            <label for="psw">Enter Password</label>
+            <label id="psw-label" for="psw">Password</label>
+            <span class="material-symbols-outlined"> lock </span>
+          </div>
+
+          <div class="login-input" id="pswInp2" style="display: none">
+            <input class="input-area" type="password" required />
+            <label for="psw">Confirm password</label>
             <span class="material-symbols-outlined"> lock </span>
           </div>
 
           <div class="login-btn">
-            <button type="submit">Login</button>
+            <button id="btnLogin" type="submit">Login</button>
           </div>
         </form>
 
@@ -37,12 +43,46 @@
           <span><input type="checkbox" /> Remember me</span>
           <a href="/">Forgot Password?</a>
         </div>
-        <div class="signup-link">
-          <p>Don't have account?<a href="/"> Signup</a></p>
+
+        <div class="signup-link" id="signupLink">
+          <p>Don't have an account?<a id="aSLink" href="#"> Signup</a></p>
         </div>
       </div>
     </div>
 
-    <script></script>
+    <div class="wrapper-signup">
+      <div class="login-form">
+        <h2 id="heading">Signup</h2>
+        <form action="">
+          <div class="login-input">
+            <input class="input-area" type="text" required />
+            <label for="usrname">Email</label>
+            <span class="material-symbols-outlined"> person </span>
+          </div>
+
+          <div class="login-input">
+            <input class="input-area" type="password" required />
+            <label id="psw-label" for="psw">Create password</label>
+            <span class="material-symbols-outlined"> lock </span>
+          </div>
+
+          <div class="login-input">
+            <input class="input-area" type="password" required />
+            <label for="psw">Confirm password</label>
+            <span class="material-symbols-outlined"> lock </span>
+          </div>
+
+          <div class="login-btn">
+            <button id="btnSignup" type="submit">Signup</button>
+          </div>
+        </form>
+
+        <div class="signup-link" id="signupLink">
+          <p>Already have an account?<a id="aLLink" href="#"> Login</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
   </body>
 </html>
