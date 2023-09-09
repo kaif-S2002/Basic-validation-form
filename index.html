@@ -13,17 +13,29 @@
 
   <body>
     <div class="wrapper-login">
+      <!--login page-->
       <div class="login-form">
         <h2 id="heading">Login</h2>
         <form action="">
           <div class="login-input">
-            <input class="input-area" type="text" required />
-            <label for="usrname">Email</label>
+            <input
+              class="input-area"
+              id="loginEmailInp"
+              type="text"
+              name="email"
+              required
+            />
+            <label for="email">Email</label>
             <span class="material-symbols-outlined"> person </span>
           </div>
-
           <div class="login-input">
-            <input class="input-area" type="password" required />
+            <input
+              class="input-area"
+              id="loginPswInp"
+              type="password"
+              name="password"
+              required
+            />
             <label id="psw-label" for="psw">Password</label>
             <span class="material-symbols-outlined"> lock </span>
           </div>
@@ -45,23 +57,42 @@
     </div>
 
     <div class="wrapper-signup">
+      <!--signup page-->
       <div class="login-form">
         <h2 id="heading">Signup</h2>
         <form action="">
           <div class="login-input">
-            <input class="input-area" type="text" required />
-            <label for="usrname">Email</label>
+            <input
+              class="input-area"
+              id="signupEmailInp"
+              type="text"
+              name="email"
+              required
+            />
+            <label for="email">Email</label>
             <span class="material-symbols-outlined"> person </span>
           </div>
 
           <div class="login-input">
-            <input class="input-area" type="password" required />
+            <input
+              class="input-area"
+              id="signupPswInp"
+              type="password"
+              name="password"
+              required
+            />
             <label id="psw-label" for="psw">Create password</label>
             <span class="material-symbols-outlined"> lock </span>
           </div>
 
           <div class="login-input">
-            <input class="input-area" type="password" required />
+            <input
+              class="input-area"
+              id="signupPswInp2"
+              type="password"
+              name="password"
+              required
+            />
             <label for="psw">Confirm password</label>
             <span class="material-symbols-outlined"> lock </span>
           </div>
